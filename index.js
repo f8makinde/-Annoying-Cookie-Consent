@@ -1,7 +1,16 @@
-let modal = document.getElementById("modal");
-let removeModal = document.getElementById("modal-close-btn");
-let form = document.getElementById("consent-btn");
-let text = document.getElementById("modal-text")
+const modal = document.getElementById("modal");
+
+const removeModal = document.getElementById("modal-close-btn");
+
+const form = document.getElementById("consent-btn");
+
+const text = document.getElementById("modal-text");
+
+const declineBtn = document.getElementById("decline-btn")
+
+const modalChoiceBtns = document.getElementById("modal-choice-btns");
+
+
 setTimeout(function(){
     modal.style.display = "inline";
 }, 1500)
@@ -11,8 +20,13 @@ removeModal.addEventListener("click", function(){
     modal.style.display = "none";
 })
 
+
+declineBtn.addEventListener("mouseenter", function(){
+   modalChoiceBtns.classList.toggle("modal-reverse")
+})
 form.addEventListener("submit", function(event){
   event.preventDefault();
+
    const formData = new FormData(form);
    const fullName = formData.get("fullName");
 
@@ -22,9 +36,13 @@ form.addEventListener("submit", function(event){
     <p id="upload-text">Uploading your data to the dark web...</p>
     </div>` 
    
+
+
   setTimeout(function(){
     document.getElementById(id="upload-text").textContent = "Making the sale..."
   }, 1500)
+
+
 
   setTimeout(function(){
     document.getElementById("modal-inner").innerHTML = `<h2>Thanks <span class="modal-display-name">${fullName}</span>, you sucker! </h2>
@@ -32,9 +50,11 @@ form.addEventListener("submit", function(event){
     <div class="idiot-gif">
         <img src="pirate.gif">
     </div>`
+
     removeModal.disabled = false;
 
   }, 3000)
+
 
 })
 

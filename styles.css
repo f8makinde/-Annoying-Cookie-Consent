@@ -25,6 +25,13 @@ p{
     line-height:1.75rem;
 
 }
+.modal-reverse{
+    flex-direction: row-reverse;
+}
+.visually-hidden{
+    position: absolute;
+    top: -5000px;
+}
 main{
     width: 400px;
     margin: 0 auto;
