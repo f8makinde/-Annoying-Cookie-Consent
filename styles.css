@@ -9,7 +9,7 @@ html, body {
 }
 h1{
     font-size: 3rem;
-    line-height: 3.75rem;;
+    line-height: 3.75rem;
     font-weight: 900;
 }
 h2{
@@ -136,4 +136,16 @@ input{
 .idiot-gif img{
     box-shadow: 1px 1px 3px #999;
     border-radius: 5px;
+}
+@media (max-width: 675px){
+    h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin-left: .5em;
+    }
+    .modal { 
+     width: 100%;
+     max-width: 500px;
+     height: 450px;
+    }
 }
