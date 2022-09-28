@@ -105,8 +105,8 @@ li{
     .modal-text{
         height: 140px;
         line-height: 23px;
-        margin-bottom: 0;
-       width: 100%;
+        margin: 0 0 2em 0;
+        width: 100%;
     }
     .modal-choice-btns{
         margin-top: 0.625em;
@@ -157,5 +157,5 @@ input{
         margin-left: 1em;
         margin-right: 1em;
     }
-    
+
 }
