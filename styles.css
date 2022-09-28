@@ -64,9 +64,9 @@ li{
         left: 0;
         display: none;
         margin: auto;
-        max-height: 500px;
-        max-width: 50%;
-        min-width: 300px;
+        width: 500px;
+        max-width: fit-content;
+        height: 500px;
         border-radius: 5px;
         box-shadow: 0px 0px 6px 2px #666;
         background-color: #212529;
@@ -106,7 +106,6 @@ li{
         display: flex;
         justify-content: center;
     }
-  
     .modal-btn{
         padding: .625em 1.5em;
     }
@@ -119,4 +118,15 @@ input{
 }
 #upload-text{
     text-align: center;
+}
+.modal-display-name{
+    color: fuchsia;
+}
+.idiot-gif{
+    width: 95%;
+    margin: 0 auto;
+}
+.idiot-gif img{
+    box-shadow: 1px 1px 3px #999;
+    border-radius: 5px;
 }

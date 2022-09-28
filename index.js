@@ -13,6 +13,9 @@ removeModal.addEventListener("click", function(){
 
 form.addEventListener("submit", function(event){
   event.preventDefault();
+   const formData = new FormData(form);
+   const fullName = formData.get("fullName");
+
     text.innerHTML =    
      `<div class="modal-inner-loading">
     <img src="loading.svg" class="loading">
@@ -24,12 +27,14 @@ form.addEventListener("submit", function(event){
   }, 1500)
 
   setTimeout(function(){
-    document.getElementById("modal-inner").innerHTML = `<h2>Thanks you sucker! </h2>
+    document.getElementById("modal-inner").innerHTML = `<h2>Thanks <span class="modal-display-name">${fullName}</span>, you sucker! </h2>
     <p>We just sold the rights to your eternal soul.</p>
     <div class="idiot-gif">
         <img src="pirate.gif">
     </div>`
+    removeModal.disabled = false;
 
   }, 3000)
 
 })
+
