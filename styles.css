@@ -26,7 +26,6 @@ p{
     line-height:1.75rem;
     margin: 0 .5em;
 }
-
 .modal-reverse{
     flex-direction: row-reverse;
 }
@@ -144,25 +143,46 @@ input{
 .loading{
     width: 100%;
 }
+#consent-btn{
+    margin-top: 5em;
+}
 @media (min-width: 675px){
     h1{
         font-size: 3rem;
         line-height: 3.75rem;
-        font-weight: 900;  
+        font-weight: 900; 
+        margin: 0 auto;
+        width: 50%;
     }
     h3{
-        width: 100%;
+        width: 50%;
+        margin: 0 auto;
+        font-size: 2rem;
+        margin-bottom: 20px;
     }
     main{
         width: 100%;
         margin: 0 auto;
     }
     img{
-        max-width: 100%;
+        max-width: 50%;
+       display: block;
+       margin: 0 auto;
     }
     .modal { 
-        width: 100%;
+        width: 50%;
         max-width: fit-content;
         height: 500px;
     }
+    ul{
+     width: 50%;
+     margin: 0 auto;
+   }
+   p{
+    font-size: 1.25rem;
+    line-height:1.65rem;
+     width: 50%;
+     margin: 0 auto;
+
+  }
 }
