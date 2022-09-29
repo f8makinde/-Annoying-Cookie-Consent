@@ -11,6 +11,7 @@ h1{
     font-size: 3rem;
     line-height: 3.75rem;
     font-weight: 900;
+    width: 100%;
 }
 h2{
     margin-top: 0;
@@ -19,6 +20,7 @@ h3{
     font-size: 1.25rem;
     font-weight: 700; 
     line-height: 1.875rem;
+    width: 100%;
 }
 p{
     font-size: 1.125rem;
@@ -43,6 +45,8 @@ img{
 ul{
     list-style: none;
     padding: 5px 0 0 0;
+    width: 100%;
+
 }
 li{
     padding: 0.68em;
@@ -154,8 +158,11 @@ input{
         margin-right: 1em;
     }
     h3{
-        margin-left: 1em;
-        margin-right: 1em;
+        margin-left: .5em;
+        margin-right: .2em;
+    }
+    ul{
+        margin-left: .5em;
     }
 
 }
